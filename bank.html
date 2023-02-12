@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baap er bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DotGothic16&family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;700&family=Lobster&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@500;700&family=Rubik+Bubbles&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl font-semi-bold text-center mt-5">Let's get some <span class="text-violet-500">money</span>!!!</h1>
+
+    <section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-9/12 mx-auto mt-12">
+            <!-- deposit seciotn -->
+            <div class="bg-emerald-600 text-center py-7 rounded-ms drop-shadow-lg another-css">
+                <h3 class="text-3xl mb-4 text-white">Deposit</h3>
+                <h2 class="text-3xl text-white">$<span id="deposit-amount">00</span></h2>
+            </div>
+            <!-- withdraw section -->
+            <div class="bg-emerald-600 text-center py-7 rounded-ms drop-shadow-lg another-css">
+                <h3 class="text-3xl mb-4 text-white">Withdraw</h3>
+                <h2 class="text-3xl text-white">$<span id="withdraw-amount">00</span></h2>
+            </div>
+            <!-- balance section -->
+            <div class="bg-emerald-600 text-center py-7 rounded-ms drop-shadow-lg another-css">
+                <h3 class="text-3xl mb-4 text-white">Balance</h3>
+                <h2 class="text-3xl text-white">$<span id="total-balnace">1240</span></h2>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="mt-16 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-9/12 mx-auto">
+            <!-- left part -->
+            <div class="bg-indigo-400 p-8 drop-shadow-lg">
+                <h2 class="text-2xl mb-3 text-white">Please deposit</h2>
+                <input class="p-3 block rounded-md  w-10/12 md:w-10/12" placeholder="$ You want to deposit " type="text" name="" id="deposit-field">
+                <button id="deposit-btn" type="button" class="another-css text-white bg-cyan-800 py-3 px-7 mt-5 rounded-md text-2xl hover:bg-red-400">Deposit</button>
+            </div>
+            <!-- right part -->
+            <div class="bg-indigo-400 p-8 drop-shadow-lg">
+                <h2 class="text-2xl mb-3 text-white">Please deposit</h2>
+                <input class="p-3 block rounded-md  w-10/12 md:w-10/12" placeholder="$ You want to deposit " type="text" name="" id="withdraw-field">
+                <button id="withdraw-btn" type="button" class="another-css text-white bg-cyan-800 py-3 px-7 mt-5 rounded-md text-2xl hover:bg-red-400">Withdraw</button>
+            </div>
+            
+        </div>
+        <script src="js/deposit.js"></script>
+        <script src="js/withdraw.js"></script>
+    </section>
+</body>
+</html>
